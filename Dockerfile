@@ -5,6 +5,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update && \
     apt-get install php php-fpm apache2 apache2-utils mariadb-server -y && \
+    apt-get install zip -y && \
     apt install wget -y && \
     apt-get clean
     
